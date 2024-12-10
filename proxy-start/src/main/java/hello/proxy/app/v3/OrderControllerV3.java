@@ -1,17 +1,14 @@
 package hello.proxy.app.v3;
 
-import hello.proxy.app.v1.OrderControllerV1;
-import hello.proxy.app.v2.OrderServiceV2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
 @ResponseBody
-public class OrderControllerV3 implements OrderControllerV1 {
+public class OrderControllerV3 {
 
     private final OrderServiceV3 orderService;
 
